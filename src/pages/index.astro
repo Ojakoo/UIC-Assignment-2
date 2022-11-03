@@ -3,27 +3,11 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Button">
-	<main>
-		<button type="button" class="link-button">
-			Click Me!
-		</button>
+	<main class="m-auto box-border h-screen">
+		<div class="flex justify-center items-center h-screen box-border">
+			<button type="button" class="box-content text-xl bg-green-400 hover:bg-red-400 h-8 p-4 rounded-xl">
+				Click Me!
+			</button>
+		</div>
 	</main>
 </Layout>
-
-<style>
-	main {
-		margin: auto;
-		box-sizing: border-box;
-		height: 100vh;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.link-button {
-	}
-</style>
